@@ -3,7 +3,7 @@ Independently developing a cross-platform application designed for Web, Android,
 
 Project Odyssey focuses on trip creation, allowing users to build trips either using AI with the help of Gemini through Firebase Genkit or manually with ReactFlow, connecting places in a structured and intuitive way.
 
-This private repository serves as a workspace to showcase the development progress, architecture, and features of Project Odyssey, covering the entire lifecycle from planning and implementation to testing and deployment.
+This repository serves as a workspace to showcase the development progress, architecture, and features of the private reposetory 'Project Odyssey', covering the entire lifecycle from planning and implementation to testing and deployment.
 
 # 🔧 Tech Stack
 <p align="left">
