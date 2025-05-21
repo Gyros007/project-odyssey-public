@@ -29,3 +29,15 @@ Project Odyssey focuses on trip creation, allowing users to build trips either u
 
 ![Screenshot 2025-03-06 022756](https://github.com/user-attachments/assets/e2337dcf-b93d-4b88-a0ca-d3c6a6efc35e)
 ![Screenshot 2025-03-06 022430](https://github.com/user-attachments/assets/ec6cca91-3839-4a00-84c5-b4ec169fe163)
+
+## Update 1: Migration from Firestore to Firebase Data Connect
+
+This project is currently undergoing a migration from Google Cloud Firestore to Firebase Data Connect. This decision was driven by several factors:
+
+*   **Data Connect is now Generally Available:** With Firebase Data Connect recently exiting its public preview on April 9, 2025, it's become a production-ready solution.
+*   **Query Flexibility:** Firestore's query limitations were becoming a significant constraint. Data Connect, leveraging PostgreSQL, offers much greater flexibility in querying and manipulating data.
+*   **Simplified Data Management:** Maintaining denormalized data in Firestore was increasingly complex and time-consuming. Data Connect's relational structure promises to simplify data management and reduce redundancy.
+*   **Future-Proofing with Industry Standards:** While Firestore is a proprietary NoSQL database, Data Connect is built on open standards like PostgreSQL and GraphQL. This significantly lowers the barrier to migrating to other database providers in the future if needed.
+*   **Vendor Lock-in Mitigation:** Although Firebase Data Connect's GraphQL implementation includes custom directives from the Firebase team, the underlying data structure remains PostgreSQL. This means that even with Firebase's abstractions, a future migration *away* from Data Connect is still a viable option, unlike the complete vendor lock-in that comes with Firestore's NoSQL structure.
+
+By embracing Data Connect, this project aims to benefit from increased query power, simplified data maintenance, and the assurance of greater portability in the long run.
